@@ -1,17 +1,8 @@
 import React, { Component } from 'react';
 import Projects from "./Projects";
 import SocialProfile from "./SocialProfiles";
+import profile from "./assets/profile.png";
 
-
-
-// class RegularClass{}
-// class ComponentClass extends Component{}
-
-// const regularClassInstance = new RegularClass();
-// const componentClassInstance = new ComponentClass();
-
-// console.log("regularClassInstance", regularClassInstance);
-// console.log("componentClassInstance", componentClassInstance);
 
 class App extends Component{
     state = {displayBio: false}
@@ -24,6 +15,7 @@ class App extends Component{
 
         return (
             <div> 
+                <img className="profile" src={profile} alt="profile"/>
                 <h1> Hello </h1> 
                 <p> My name is Tomek. I'm a software engineer. </p>  
                 <p> I'm always looking forward to working on meaningful projects. </p>
