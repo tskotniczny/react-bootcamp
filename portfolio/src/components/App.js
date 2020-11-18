@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Projects from "./Projects";
 import SocialProfile from "./SocialProfiles";
 import profile from "../assets/profile.png";
-import Header from "./Header";
 import Title from "./Title";
 
 
@@ -16,7 +15,6 @@ class App extends Component{
     render() {
         return (
             <div>
-                <Header /> 
                 <img className="profile" src={profile} alt="profile"/>
                 <h1> Hello </h1> 
                 <p> My name is Tomek. </p>
@@ -46,5 +44,6 @@ class App extends Component{
         )
     }
 }
+
 
 export default App;
